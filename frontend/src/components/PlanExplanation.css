@@ -1,0 +1,34 @@
+.plan-explanation {
+  padding: 22px;
+  background: var(--bg-gradient);
+  backdrop-filter: blur(12px);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow), var(--inset-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+}
+
+.plan-explanation::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, rgba(109, 94, 246, 0.08), rgba(34, 211, 238, 0.04));
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.plan-explanation h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.plan-explanation p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
